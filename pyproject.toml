@@ -1,0 +1,33 @@
+[build-system]
+requires = ['setuptools>=61.0.0', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name ='ormedian-resizer'
+version = '0.0.1'
+description = 'Resizes images in a folder to specified sizes'
+readme = 'README.md'
+authors = [{name = 'Samuel Adebayo', email = 'samuel@ormedian.com'}]
+license = {file ='LICENSE'}
+classifiers = [
+'License:: OSI Approved :: MIT License',
+'Programming Language :: Python',
+'Programming Language :: Python :: 3']
+
+keywords = ['image resizer', 'reduce size', 'reduce image quality', 'image', 'jpg', 'png']
+
+[project.optional-dependencies]
+dev = ['black', 'bumpver', 'isort', 'pip-tools', 'pytest'
+
+]
+[project.urls]
+Homepage = 'https://github.com/exponentialR/ormedian-resizer'
+
+dependencies =[
+'PIL <= 1.1.7',
+    'matplotlib <= 3.34'
+]
+requires-python = '<=3.8'
+
+[project.scripts]
+ormedian-resizer = 'resizer.__main__:main'
