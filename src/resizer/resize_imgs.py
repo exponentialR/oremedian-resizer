@@ -40,7 +40,7 @@ def resizer(new_size: tuple,
                     pass
                 Resized_img.show(new_folder)
                 i += 1
-            #
+            
             else:
                 image_path = Path(image_path)
                 n_folder = os.path.join(image_path.parent, new_folder)
