@@ -63,4 +63,4 @@ def resizer(new_size: tuple,
                 plt.title(f'Resized image {img} ')
                 plt.pause(0.001)
 
-    print(f'{i} images have been resized to size: {new_size}')
+    print(f'{i} images have been resized to size: {new_size}, with Image extension {out_format}')
